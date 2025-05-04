@@ -12,7 +12,16 @@
 
 Áp dụng Clean Architecture với các tầng:
 
-<pre> <code> ```text app/ ├── domain/ # Entities & repository interfaces ├── use_cases/ # Business logic (application layer) ├── infrastructure/ # Implementations (e.g., in-memory repository) ├── interfaces/ # HTTP controller (FastAPI routes) └── main.py # Entry point ``` </code> </pre>
+
+
+````markdown
+```text
+app/
+├── domain/         # Entities & repository interfaces
+├── use_cases/      # Business logic (application layer)
+├── infrastructure/ # Implementations (e.g., in-memory repository)
+├── interfaces/     # HTTP controller (FastAPI routes)
+└── main.py         # Entry point
 
 ### 🔁 Dòng chảy xử lý
 Request → Controller (interfaces) → Use Case → Repository (interface) → Implementation (infrastructure) → Response
