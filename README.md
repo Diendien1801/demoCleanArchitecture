@@ -15,7 +15,7 @@
 
 
 ````markdown
-```text
+
 app/
 ├── domain/         # Entities & repository interfaces
 ├── use_cases/      # Business logic (application layer)
